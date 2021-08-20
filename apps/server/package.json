@@ -1,0 +1,14 @@
+{
+  "name": "@migue/server",
+  "scripts": {
+    "dev": "nodemon src/app.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "socket.io": "^4.1.3"
+  }
+}

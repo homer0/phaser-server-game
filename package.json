@@ -1,19 +1,11 @@
 {
+  "name": "@migue/beerjs-game",
+  "private": true,
   "scripts": {
-    "game-dev": "parcel watch src/_game/index.html --dist-dir src/public",
-    "server-dev": "nodemon src/app.js",
-    "dev": "concurrently \"npm run game-dev\" \"npm run server-dev\"",
-    "build": "parcel build src/_game/index.html --dist-dir src/public"
+    "dev": "PUBLIC_PATH=../../.public lerna run dev --stream",
+    "bootstrap": "lerna bootstrap"
   },
   "devDependencies": {
-    "nodemon": "^2.0.12",
-    "parcel": "^2.0.0-beta.3.1",
-    "concurrently": "^6.2.0"
-  },
-  "dependencies": {
-    "dotenv": "^10.0.0",
-    "express": "^4.17.1",
-    "phaser": "^3.55.2",
-    "socket.io": "^4.1.3"
+    "lerna": "^4.0.0"
   }
 }
